@@ -1,5 +1,6 @@
 # Summary
 
-* [win10安装cuda8](README.md)
+* [README](README.md)
+* [win10安装cuda8](win10an-zhuang-cuda8.md)
 * [安装tensorflow-gpu](an-zhuang-tensorflow-gpu.md)
 
