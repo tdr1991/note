@@ -22,17 +22,17 @@
 
 ## ![](/Ubuntu14.04/assets/1_1.png)
 
-![](/Ubuntu14.04/assets/1_2.png)
+![](/Ubuntu14.04/assets/1_2.png)2.
 
-1. 根据路由信息添加相应的路由
+2. 根据路由信息添加相应的路由
 
 sudo route add -net 172.20.0.0/16 gw 210.75.253.2
 
 添加后的路由信息如下
 
-![](/Ubuntu14.04/assets/1_3.png)
+![](/Ubuntu14.04/assets/1_3.png)3.
 
-1. 测试
+3. 测试
 
 ping www.baidu.com
 
@@ -44,5 +44,5 @@ ping www.baidu.com
 
 ## 安装配置远程桌面服务
 
-[Ubuntu14.04/win10conubuntu16.04.md](/Ubuntu14.04/win10conubuntu16.04.md)
+参考    [Ubuntu14.04/win10conubuntu16.04.md](/Ubuntu14.04/win10conubuntu16.04.md)
 
