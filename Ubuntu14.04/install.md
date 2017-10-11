@@ -18,13 +18,13 @@
 
 如果需要指定IP可以参考以下配置
 
-1. 配置好IP、子网掩码、网关和DNS
+1.配置好IP、子网掩码、网关和DNS
 
 ## ![](/Ubuntu14.04/assets/1_1.png)
 
-![](/Ubuntu14.04/assets/1_2.png)2.
+![](/Ubuntu14.04/assets/1_2.png).
 
-2. 根据路由信息添加相应的路由
+2.根据路由信息添加相应的路由
 
 sudo route add -net 172.20.0.0/16 gw 210.75.253.2
 
@@ -32,7 +32,7 @@ sudo route add -net 172.20.0.0/16 gw 210.75.253.2
 
 ![](/Ubuntu14.04/assets/1_3.png)3.
 
-3. 测试
+3.测试
 
 ping www.baidu.com
 
