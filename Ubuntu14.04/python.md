@@ -10,7 +10,7 @@ python --version
 
 2.安装前进行一些更新
 
- sudo add-apt-repository ppa:fkrull/deadsnakes
+sudo add-apt-repository ppa:fkrull/deadsnakes
 
 sudo apt-get update
 
@@ -44,5 +44,9 @@ ln -s /usr/bin/python3.6 /usr/bin/python
 
 ![](/Ubuntu14.04/assets/3_6.png)
 
+5.python3安装的pip命令使用时pip3
 
+pip3 list
+
+![](/Ubuntu14.04/assets/3_7.png)
 
