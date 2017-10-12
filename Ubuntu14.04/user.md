@@ -46,7 +46,5 @@ Linux中每一个文件或者目录都包含一个用户权限、一个组的权
 
 \[root@localhost /\]chmod 456 test.txt //表示root用户对test具有r\(4\)的权限，root组队test文件具有r\(4\)+x\(1\)的权限，其他人具有rw的权限
 
-\[root@localhost /\]chmod 000 test.txt //表示去除所有权限&lt;/div&gt;&lt;/div&gt;&lt;div id="MySignature"&gt;
-
-
+\[root@localhost /\]chmod 000 test.txt //表示去除所有权限
 
