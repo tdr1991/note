@@ -112,7 +112,5 @@ sudo apt-get install tk-dev
 
 import matplotlib as mpl
 
-mpl.sue\("TkAgg"\)   \#默认使用Agg为后端，但是Agg没有绘图能力
-
-
+mpl.use\("TkAgg"\)   \#默认使用Agg为后端，但是Agg没有绘图能力
 
