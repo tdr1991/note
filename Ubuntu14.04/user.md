@@ -32,23 +32,21 @@ Linux中每一个文件或者目录都包含一个用户权限、一个组的权
 
 修改文件或文件夹的权限
 
- \[root@localhost /\]chmod u+r test.txt //表示为root用户添加读的权限
+\[root@localhost /\]chmod u+r test.txt //表示为root用户添加读的权限
 
- \[root@localhost /\]chmod g-w test.txt //表示为root组去除写的权限
+\[root@localhost /\]chmod g-w test.txt //表示为root组去除写的权限
 
- \[root@localhost /\]chmod o+x test.txt //表示其他人添加可执行的权限
+\[root@localhost /\]chmod o+x test.txt //表示其他人添加可执行的权限
 
 如果我们要为所有用户添加所有rwx权限
 
- \[root@localhost /\]chmod u=rwx,g=rwx,o=rwx test.txt
+\[root@localhost /\]chmod u=rwx,g=rwx,o=rwx test.txt
 
- 为了能更简单快捷的使用和熟悉权限，rwx权限可以用数字来表示，分别表示为r\(4\)、w\(2\)、x\(1\)
+为了能更简单快捷的使用和熟悉权限，rwx权限可以用数字来表示，分别表示为r\(4\)、w\(2\)、x\(1\)
 
- \[root@localhost /\]chmod 456 test.txt //表示root用户对test具有r\(4\)的权限，root组队test文件具有r\(4\)+x\(1\)的权限，其他人具有rw的权限
+\[root@localhost /\]chmod 456 test.txt //表示root用户对test具有r\(4\)的权限，root组队test文件具有r\(4\)+x\(1\)的权限，其他人具有rw的权限
 
-\[root@localhost /\]chmod 000&nbsp;test.txt //表示去除所有权限&lt;/div&gt;&lt;/div&gt;&lt;div id="MySignature"&gt;
-
-
+\[root@localhost /\]chmod 000 test.txt //表示去除所有权限&lt;/div&gt;&lt;/div&gt;&lt;div id="MySignature"&gt;
 
 
 
