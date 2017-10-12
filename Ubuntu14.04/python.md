@@ -70,11 +70,39 @@ Miniconda下载    [https://conda.io/miniconda.html](https://conda.io/miniconda.
 
 ![](/Ubuntu14.04/assets/3_9.png)
 
+安装完成后如果需要立即生效需执行更新命令
 
+source  ~/.bashrc
 
+![](/Ubuntu14.04/assets/3_10.png)
 
+删除Miniconda
 
+rm -rf ~/miniconda
 
+rm -rf ~/.condarc ~/.conda ~/.continuum
+
+删除安装的根目录
+
+rm -rf /home/ubuntu/miniconda3/
+
+![](/Ubuntu14.04/assets/3_11.png)
+
+穿件python环境
+
+conda create --name py3 python=3
+
+![](/Ubuntu14.04/assets/3_12.png)
+
+激活环境
+
+source activate py3
+
+![](/Ubuntu14.04/assets/3_13.png)
+
+退出环境
+
+source deactivate
 
 
 
