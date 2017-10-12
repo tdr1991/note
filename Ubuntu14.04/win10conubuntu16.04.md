@@ -33,3 +33,17 @@ dconf-editor是一个注册表编辑器
 
 ![](/Ubuntu14.04/assets/2_4.png)
 
+如果使用的是xfce桌面
+
+sudo apt-get install xubuntu-desktop
+
+echo "xfce4-session" &gt; ~/.xsession
+
+sudo service xrdp restart
+
+然而发现tab键不能用了，解决方法如下：$ xfwm4-settings，找到keyboard，
+
+将switch windows for same application项clear一下
+
+![](/Ubuntu14.04/assets/2_5.png)
+
