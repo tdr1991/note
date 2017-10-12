@@ -88,7 +88,7 @@ rm -rf /home/ubuntu/miniconda3/
 
 ![](/Ubuntu14.04/assets/3_11.png)
 
-穿件python环境
+创建python环境
 
 conda create --name py3 python=3
 
@@ -103,6 +103,16 @@ source activate py3
 退出环境
 
 source deactivate
+
+如果要在Ubuntu显示matplotlib画的图形
+
+sudo apt-get install tk-dev
+
+在python源文件添加以下两条语句
+
+import matplotlib as mpl
+
+mpl.sue\("TkAgg"\)   \#默认使用Agg为后端，但是Agg没有绘图能力
 
 
 
