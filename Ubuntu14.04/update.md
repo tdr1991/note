@@ -22,15 +22,15 @@ sudo apt-get update && sudo apt-get dist-upgrade
 
 sudo reboot
 
-如果使用ssh登录服务器升级，建议使用screen，防止SSH连接断开。 
+如果使用ssh登录服务器升级，建议使用screen，防止SSH连接断开。
 
 安装screen，启动screen，升级Ubuntu：
 
- sudo apt-get install screen
+sudo apt-get install screen
 
 screen
 
 sudo do-release-upgrade -p
 
-
+有些需要选择的项，但基本上选择yes
 
