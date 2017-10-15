@@ -32,6 +32,8 @@ local\_enable=NO
 
 将家目录修改为：/data/ftp
 
+正常情况下匿名用户不开通上传权限和创建目录的权限
+
 ## 本地用户配置
 
 修改配置文件/etc/vsftpd.conf
