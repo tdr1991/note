@@ -64,5 +64,15 @@ allow\_writeable\_chroot=YES  \# 很重要，不设置无法登录显示目录
 
 sudo /etc/init.d/vsftpd start
 
+## 客户端连接
+
+### 浏览器连接
+
+地址栏输入      ftp://1.2.3.4    \# 直接输入IP地址即可
+
+## 软件连接
+
+8uftp
+
 
 
