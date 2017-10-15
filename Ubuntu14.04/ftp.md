@@ -20,9 +20,19 @@ sudo apt-get install vsftpd
 
 ## 匿名用户配置
 
+修改配置文件/etc/vsftpd.conf
 
+anonymous\_enable=YES  \# 匿名用户配置，一般一次配置配置一种类型
+
+local\_enable=NO
+
+修改/etc/passwd
+
+将其家目录修改为想要开放的目录
 
 ## 本地用户配置
+
+修改配置文件/etc/vsftpd.conf
 
 anonymous\_enable=NO  \# 匿名用户配置，一般一次配置配置一种类型
 
@@ -30,7 +40,7 @@ local\_enable=YES
 
 local\_root=/data/tdr  \# 将用户登录目录限制在/data/tdr，使其到不了其他目录
 
- \# 为使限制目录生效，需设置下面4条
+\# 为使限制目录生效，需设置下面4条
 
 chroot\_local\_user=YES
 
@@ -38,9 +48,9 @@ chroot\_list\_enable=YES
 
 chroot\_list\_file=/etc/vsftpd.chroot\_list
 
-allow\_writeable\_chroot=YES
+allow\_writeable\_chroot=YES  \# 很重要，不设置无法登录显示目录
 
- \# 在上面这种设置下，/etc/vsftpd.chroot\_list里的用户表示不受目录限制。如果chroot\_local\_user=NO，
+\# 在上面这种设置下，/etc/vsftpd.chroot\_list里的用户表示不受目录限制。如果chroot\_local\_user=NO，
 
- \# 则表 明/etc/vsftpd.chroot\_list的用户是受限制的。
+\# 则表 明/etc/vsftpd.chroot\_list的用户是受限制的。
 
