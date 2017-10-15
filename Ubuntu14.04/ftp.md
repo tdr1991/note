@@ -20,13 +20,13 @@ sudo apt-get install vsftpd
 
 ## 匿名用户配置
 
-修改配置文件/etc/vsftpd.conf
+### 修改配置文件/etc/vsftpd.conf
 
 anonymous\_enable=YES  \# 匿名用户配置，一般一次配置配置一种类型
 
 local\_enable=NO
 
-修改/etc/passwd文件
+### 修改/etc/passwd文件
 
 将其家目录修改为想要开放的目录，如上节的截图所示
 
@@ -38,7 +38,7 @@ local\_enable=NO
 
 ## 本地用户配置
 
-修改配置文件/etc/vsftpd.conf
+### 修改配置文件/etc/vsftpd.conf
 
 anonymous\_enable=NO  \# 匿名用户配置，一般一次配置配置一种类型
 
@@ -59,4 +59,10 @@ allow\_writeable\_chroot=YES  \# 很重要，不设置无法登录显示目录
 \# 在上面这种设置下，/etc/vsftpd.chroot\_list里的用户表示不受目录限制。如果chroot\_local\_user=NO，
 
 \# 则表 明/etc/vsftpd.chroot\_list的用户是受限制的。
+
+## 开启vsftpd服务
+
+sudo /etc/init.d/vsftpd start
+
+
 
