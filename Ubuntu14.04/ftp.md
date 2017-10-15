@@ -74,5 +74,9 @@ sudo /etc/init.d/vsftpd start
 
 8uftp
 
+## 我的电脑
+
+直接在地址栏输入   ftp://1.2.3.4 \# 直接输入IP地址即可
+
 
 
