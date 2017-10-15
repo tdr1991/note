@@ -2,6 +2,8 @@
 
 ## 创建用户
 
+使用命令adduser才会自动创建家目录，useradd并不会，只是在/etc/passwd文件添加信息
+
 adduser tdr
 
 ![](/Ubuntu14.04/assets/7_1.png)
