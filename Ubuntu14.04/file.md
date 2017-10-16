@@ -1,6 +1,6 @@
 # 文件/文件夹相关操作
 
-## win10与Ubuntu14.04之间相互传文件/文件夹
+## win10与Ubuntu16.04之间相互传文件/文件夹
 
 ### win10传文件/文件夹
 
@@ -19,4 +19,8 @@
 从本地上传文件/文件夹到Ubuntu14.04
 
 /d/pscp.exe -r /e/tdr/HMP/HM16STR/suminfo/\* tdr@210.75.253.131:/data/tdr/HMP/HM16STR
+
+## linux与Ubuntu16.04之间相互传文件/文件夹
+
+
 
