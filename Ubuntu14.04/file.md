@@ -8,6 +8,8 @@
 
 3.使用ftp，请参考 ftp 搭建那章  [Ubuntu14.04/ftp.md](/Ubuntu14.04/ftp.md)
 
+4.支持断点传输 rsync
+
 ### win10与Ubuntu16.04之间相互传文件/文件夹
 
 1.使用scp，下载pscp软件（windows系统没用安装这样的软件，需要借助第三方的）
@@ -49,6 +51,14 @@ sftp user@IP   \# 连上远程主机
 命令跟 ftp 模式差不多，指的是操作远程主机，如果操作本地主机，在命令前加 字符 l 就行
 
 ![](/Ubuntu14.04/assets/6_5.png)
+
+3.rsync
+
+rsync -P --rsh=ssh localfile user@1.2.3.4:remotedir
+
+如果觉得 rsync -P --rsh=ssh 太麻烦，可以用 alias 命令起个别名
+
+alias scpr="rsync -P --rsh=ssh"
 
 ## 文件压缩与解压缩
 
