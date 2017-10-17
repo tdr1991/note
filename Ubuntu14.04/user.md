@@ -52,3 +52,35 @@ Linux中每一个文件或者目录都包含一个用户权限、一个组的权
 
 \[root@localhost /\]chmod 000 test.txt //表示去除所有权限
 
+## 赋予用户sudo权限
+
+修改  /etc/sudoers 文件，文件只有只读权限，添加写权限
+
+chmod u+w /etc/sudoers
+
+编辑 /etc/sudoers 文件，找到下面这行
+
+root    ALL=\(ALL:ALL\) ALL
+
+将 root 换成 需要赋予sudo权限的用户名
+
+vim /etc/sudoers
+
+username ALL=\(ALL:ALL\) ALL
+
+如果需要设置成不需要密码，则在最后一个 ALL 前面添加  NOPASSWD: 
+
+username ALL=\(ALL:ALL\) NOPASSWD: ALL
+
+恢复文件 /etc/sudoers 权限设置
+
+chmod u-w /etc/sudoers
+
+![](/Ubuntu14.04/assets/7_2.png)
+
+
+
+
+
+
+
