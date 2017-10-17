@@ -34,5 +34,19 @@
 
 ### linux与Ubuntu16.04之间相互传文件/文件夹
 
+1.scp
 
+如果完全清楚远程的目录，则可以直接使用该方式
+
+![](/Ubuntu14.04/assets/7_3.png)
+
+2.sftp
+
+ ![](/Ubuntu14.04/assets/7_5.png)
+
+sftp user@IP   \# 连上远程主机
+
+命令跟 ftp 模式差不多，指的是操作远程主机，如果操作本地主机，在命令前加 字符 l 就行
+
+![](/Ubuntu14.04/assets/7_4.png)
 
