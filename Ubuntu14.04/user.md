@@ -6,6 +6,8 @@
 
 adduser tdr
 
+或者  useradd -m tdr  \# -m表示创建家目录
+
 ![](/Ubuntu14.04/assets/7_1.png)
 
 Linux用户权限

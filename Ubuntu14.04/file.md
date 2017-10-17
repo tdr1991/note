@@ -1,10 +1,16 @@
 # 文件/文件夹相关操作
 
-## win10与Ubuntu16.04之间相互传文件/文件夹
+## 本地与远程主机互传文件/文件夹
 
-### win10传文件/文件夹
+1.使用sftp
 
-下载pscp软件
+2.使用scp
+
+3.使用ftp，请参考 ftp 搭建那章  [Ubuntu14.04/ftp.md](/Ubuntu14.04/ftp.md)
+
+### win10与Ubuntu16.04之间相互传文件/文件夹
+
+1.使用scp，下载pscp软件（windows系统没用安装这样的软件，需要借助第三方的）
 
 [https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)
 
@@ -20,7 +26,13 @@
 
 /d/pscp.exe -r /e/tdr/HMP/HM16STR/suminfo/\* tdr@210.75.253.131:/data/tdr/HMP/HM16STR
 
-## linux与Ubuntu16.04之间相互传文件/文件夹
+2.使用sftp，下载psftp
+
+[https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html](https://www.gitbook.com/book/tdr1991/note/edit#)
+
+![](/Ubuntu14.04/assets/6_2.png)
+
+### linux与Ubuntu16.04之间相互传文件/文件夹
 
 
 
