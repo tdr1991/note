@@ -38,15 +38,35 @@
 
 如果完全清楚远程的目录，则可以直接使用该方式
 
-![](/Ubuntu14.04/assets/7_3.png)
+![](/Ubuntu14.04/assets/6_3.png)
 
 2.sftp
 
- ![](/Ubuntu14.04/assets/7_5.png)
+![](/Ubuntu14.04/assets/6_4.png)
 
 sftp user@IP   \# 连上远程主机
 
 命令跟 ftp 模式差不多，指的是操作远程主机，如果操作本地主机，在命令前加 字符 l 就行
 
-![](/Ubuntu14.04/assets/7_4.png)
+![](/Ubuntu14.04/assets/6_5.png)
+
+## 文件压缩与解压缩
+
+### 压缩
+
+![](/Ubuntu14.04/assets/6_6.png)
+
+gzip file file.gz
+
+注意用此命令压缩源文件会删除，变成以 .gz 为后缀的文件，如需恢复，执行解压缩
+
+### 解压缩
+
+gzip -d file.gz
+
+如果需要解压缩整个文件夹下的文件，可以使用以下脚本
+
+find ./dir -name “\*.gz” -exec gzip -d {} \;
+
+
 
