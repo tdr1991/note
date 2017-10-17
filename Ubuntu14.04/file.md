@@ -60,6 +60,26 @@ rsync -P --rsh=ssh localfile user@1.2.3.4:remotedir
 
 alias scpr="rsync -P --rsh=ssh"
 
+## 系统任务相关
+
+bg、fg、jobs、&、ctrl+z
+
+执行上面的文件传输任务时，通常需要传输的文件很大，如果担心ssh中途中断，ctrl+z 将任务暂停，放入后台，注意红色数字
+
+![](/Ubuntu14.04/assets/6_7.png)
+
+运行暂停任务， bg 5
+
+![](/Ubuntu14.04/assets/6_8.png)
+
+查看后台任务， jobs 
+
+![](/Ubuntu14.04/assets/6_9.png)
+
+如果需要将任务放到前台运行，执行  fg 5
+
+如果输入命令时希望后台运行，则在命令后面直接加  &  就可实现后台运行
+
 ## 文件压缩与解压缩
 
 ### 压缩
@@ -77,6 +97,4 @@ gzip -d file.gz
 如果需要解压缩整个文件夹下的文件，可以使用以下脚本
 
 find ./dir -name “\*.gz” -exec gzip -d {} \;
-
-
 
