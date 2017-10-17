@@ -62,7 +62,7 @@ alias scpr="rsync -P --rsh=ssh"
 
 ## 系统任务相关
 
-bg、fg、jobs、&、ctrl+z
+bg、fg、jobs、&、ctrl+z、nohup、ps、kill
 
 执行上面的文件传输任务时，通常需要传输的文件很大，如果担心ssh中途中断，ctrl+z 将任务暂停，放入后台，注意红色数字
 
@@ -72,7 +72,7 @@ bg、fg、jobs、&、ctrl+z
 
 ![](/Ubuntu14.04/assets/6_8.png)
 
-查看后台任务， jobs 
+查看后台任务， jobs 只能查看当前终端的后台任务，而 ps 可以查看所有终端的
 
 ![](/Ubuntu14.04/assets/6_9.png)
 
@@ -80,9 +80,25 @@ bg、fg、jobs、&、ctrl+z
 
 如果输入命令时希望后台运行，则在命令后面直接加  &  就可实现后台运行
 
+在命令前 加 nohup  表示不挂断运行
+
+kill命令：结束进程
+
+（1）通过jobs命令查看jobnum，然后执行   kill %jobnum
+
+（2）通过ps命令查看进程号PID，然后执行  kill %PID。kill -9 %PID    \#强行结束进程
+
+如果是前台进程的话，直接执行 Ctrl+c 就可以终止了
+
 ## 文件压缩与解压缩
 
 ### 压缩
+
+compress、gzip、bzip2
+
+gzip 是为了取代 compress 并提供更好的压缩比而成立的，那么 bzip2 则是为了取代 gzip 并提供更佳的压缩比而来的
+
+gzip与bzip2的用法几乎相同
 
 ![](/Ubuntu14.04/assets/6_6.png)
 
@@ -97,4 +113,10 @@ gzip -d file.gz
 如果需要解压缩整个文件夹下的文件，可以使用以下脚本
 
 find ./dir -name “\*.gz” -exec gzip -d {} \;
+
+### 打包
+
+
+
+
 
