@@ -34,6 +34,10 @@
 
 ![](/Ubuntu14.04/assets/6_2.png)
 
+3.使用 git，才发现 git 太强大了
+
+在 git 中，它可以把 windows 当作 linux 文件系统，所以可以使用 scp，sftp 命令，与下一节使用完全一样。
+
 ### linux与Ubuntu16.04之间相互传文件/文件夹
 
 1.scp
