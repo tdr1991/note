@@ -19,6 +19,10 @@ sudo apt-get install xrdp vnc4server xbase-clients
 
 ![](/Ubuntu14.04/assets/2_2.png)
 
+如果搜索框找不到，可以使用文件管理器找到desktop sharing 的位置  /user/share/applications
+
+![](/Ubuntu14.04/assets/2_10.png)
+
 ## 安装dconf-editor，取消权限限制
 
 sudo apt-get install dconf-editor
@@ -106,10 +110,4 @@ vncserver :3
 登陆后界面
 
 ![](/Ubuntu14.04/assets/2_9.png)
-
-
-
-
-
-
 
