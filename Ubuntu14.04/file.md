@@ -116,7 +116,15 @@ find ./dir -name “\*.gz” -exec gzip -d {} \;
 
 ### 打包
 
+![](/Ubuntu14.04/assets/6_10.png)
 
+压　缩：tar -jcv -f filename.tar.bz2 要被压缩的文件或目录名称
 
+查　询：tar -jtv -f filename.tar.bz2
 
+解压缩：tar -jxv -f filename.tar.bz2 -C 欲解压缩的目录
+
+那个 filename.tar.bz2 是我们自己取的档名，tar 并不会主动的产生创建的档名喔！我们要自订啦！ 所以扩展名就显的很重要了！如果不加 \[-j\|-z\] 的话，档名最好取为 \*.tar 即可。如果是 -j 选项，代表有 bzip2 的支持，因此档名最好就取为 \*.tar.bz2 ，因为 bzip2 会产生 .bz2 的扩展名之故！ 至於如果是加上了 -z 的 gzip 的支持，那档名最好取为 \*.tar.gz 喔！了解乎？
+
+另外，由於『 -f filename 』是紧接在一起的，过去很多文章常会写成『-jcvf filename』，这样是对的， 但由於选项的顺序理论上是可以变换的，所以很多读者会误认为『-jvfc filename』也可以～事实上这样会导致产生的档名变成 c ！ 因为 -fc 嘛！所以罗，建议您在学习 tar 时，将『 -f filename 』与其他选项独立出来，会比较不容易发生问题。
 
