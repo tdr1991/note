@@ -68,6 +68,8 @@ c.NotebookApp.port = 8888
 
 jupyter notebook --no-brower --port=8888
 
+浏览器登陆后的显示目录是当前的目录
+
 2.本地终端启动ssh
 
 ssh -N -f -L localhost:8888:localhost:8888 remote\_user@remote\_host
