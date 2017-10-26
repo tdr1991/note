@@ -62,6 +62,10 @@ c.NotebookApp.open\_browser = False
 
 c.NotebookApp.port = 8888
 
+\#修改默认工作目录
+
+c.NotebookApp.notebook\_dir = u‘/data’
+
 # 安装扩展
 
 conda install -c conda-forge jupyter\_contrib\_nbextensions
