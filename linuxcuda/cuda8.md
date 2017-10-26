@@ -48,7 +48,7 @@ sudo ./cuda\_8.0.61\_375.26\_linux.run
 
 # 安装cudnn7
 
-从官网下载对应系统版本的cudnn7 https://developer.nvidia.com/rdp/cudnn-download
+从官网下载对应系统版本的cudnn7 [https://developer.nvidia.com/rdp/cudnn-download](https://developer.nvidia.com/rdp/cudnn-download)
 
 ![](/linuxcuda/assets/1-5.png)
 
@@ -56,15 +56,17 @@ sudo ./cuda\_8.0.61\_375.26\_linux.run
 
 ![](/linuxcuda/assets/1-6.png)
 
- cd 至cudnn下载存放的目录，执行解压命令
+cd 至cudnn下载存放的目录，执行解压命令
 
 tar -xzvf cudnn-9.0-linux-x64-v7.tgz
 
+拷贝文件和赋权限
 
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include 
 
+sudo cp cuda/lib64/libcudnn\* /usr/local/cuda/lib64 
 
-
-
+sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn\*
 
 
 
