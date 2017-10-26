@@ -96,6 +96,8 @@ sudo ln -s /usr/local/lib/libiconv.so.2 /usr/lib/libiconv.so.2
 
 jupyter nbextension enable jupyter\_contrib\_nbextensions
 
+![](/Ubuntu14.04/assets/9-4.png)
+
 # 通过ssh远程使用jupyter
 
 1.在远程服务器，启动jupyter服务
