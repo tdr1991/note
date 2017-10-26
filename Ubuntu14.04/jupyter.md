@@ -62,6 +62,40 @@ c.NotebookApp.open\_browser = False
 
 c.NotebookApp.port = 8888
 
+# 安装扩展
+
+conda install -c conda-forge jupyter\_contrib\_nbextensions
+
+如果出现  “libiconv.so.2: cannot open shared object” 问题
+
+1.已存在，创建软连接
+
+ln -s /usr/local/lib/libiconv.so.2 /usr/lib/libiconv.so.2
+
+在执行命令
+
+ldconfig
+
+2.不存在，下载地址  [http://www.gnu.org/software/libiconv/\#downloading](http://www.gnu.org/software/libiconv/#downloading)
+
+tar -zxvf libiconv-1.15.tar.gz
+
+cd libiconv-1.15/
+
+./configure --prefix=/usr/local
+
+make
+
+sudo make install  \#安装提示权限问题加 sudo
+
+sudo ln -s /usr/local/lib/libiconv.so.2 /usr/lib/libiconv.so.2
+
+详情参考 [http://blog.chinaunix.net/uid-25266990-id-2747211.html](http://blog.chinaunix.net/uid-25266990-id-2747211.html)
+
+设置扩展可见
+
+jupyter nbextension enable jupyter\_contrib\_nbextensions
+
 # 通过ssh远程使用jupyter
 
 1.在远程服务器，启动jupyter服务
@@ -83,6 +117,4 @@ ssh -N -f -L localhost:8888:localhost:8888 remote\_user@remote\_host
 或者启动 jupyter 界面显示的  token
 
 ![](/Ubuntu14.04/assets/9-3.png)
-
-
 
