@@ -62,11 +62,17 @@ tar -xzvf cudnn-9.0-linux-x64-v7.tgz
 
 拷贝文件和赋权限
 
-sudo cp cuda/include/cudnn.h /usr/local/cuda/include 
+sudo cp cuda/include/cudnn.h /usr/local/cuda/include
 
-sudo cp cuda/lib64/libcudnn\* /usr/local/cuda/lib64 
+sudo cp cuda/lib64/libcudnn\* /usr/local/cuda/lib64
 
 sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn\*
+
+# 测试cuda是否安装成功
+
+cd 至 CUDA 8.0 Samples默认安装路径\(即在NVIDIA\_CUDA-8.0\_Samples目录下\)
+
+sudo make all -j4
 
 
 
