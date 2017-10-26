@@ -70,9 +70,19 @@ sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn\*
 
 # 测试cuda是否安装成功
 
-cd 至 CUDA 8.0 Samples默认安装路径\(即在NVIDIA\_CUDA-8.0\_Samples目录下\)
+cd 至 CUDA 8.0 Samples默认安装路径\(即在NVIDIA\_CUDA-8.0\_Samples目录下\)，编译源代码
 
 sudo make all -j4
+
+运行程序
+
+cd bin/x86\_64/linux/release 
+
+./deviceQuery
+
+![](/linuxcuda/assets/1-7.png)
+
+如果提示上面信息说明安装成功
 
 
 
