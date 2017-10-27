@@ -14,7 +14,9 @@ conda install -n py3 -y jupyter
 
 jupyter notebook --generate-config
 
-\#进入python环境，设置密码
+\#设置密码，两种方式
+
+1.进入python环境
 
 python
 
@@ -28,7 +30,15 @@ Verify password:
 
 &gt;&gt;: 'sha1:67c9e60bb8b6:9ffede0825894254b2e042ea597d771089e11aed'
 
-特别注意将 hash 码保存下来![](/Ubuntu14.04/assets/9-1.png)使用SSL加密通信
+特别注意将 hash 码保存下来![](/Ubuntu14.04/assets/9-1.png)2.直接在conda环境设置
+
+jupyter notebook password
+
+![](/Ubuntu14.04/assets/9-5.png)
+
+注意hash 码的存放位置
+
+使用SSL加密通信
 
 openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout mykey.key -out mycert.pem
 
