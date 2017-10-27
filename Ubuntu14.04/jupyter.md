@@ -36,7 +36,7 @@ jupyter notebook password
 
 ![](/Ubuntu14.04/assets/9-5.png)
 
-注意hash 码的存放位置
+注意 hash 码的存放位置
 
 使用SSL加密通信
 
