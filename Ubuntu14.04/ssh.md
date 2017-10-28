@@ -1,6 +1,6 @@
 # 本地通过ssh登录远程linux
 
-因为本地系统是windows 10，所以使用 git 操作命令。git集成了mingW，mingW 提供了一套简单方便的Windows下的基于GCC 程序开发环境。MinGW 收集了一系列免费的Windows 使用的头文件和库文件；同时整合了GNU \( http://www.gnu.org/ \)的工具集，特别是GNU 程序开发工具，所以可以在windows下使用linux系统中使用的那些命令。
+因为本地系统是windows 10，所以使用 git 操作命令。git集成了mingW，mingW 提供了一套简单方便的Windows下的基于GCC 程序开发环境。MinGW 收集了一系列免费的Windows 使用的头文件和库文件；同时整合了GNU \( [http://www.gnu.org/](http://www.gnu.org/) \)的工具集，特别是GNU 程序开发工具，所以可以在windows下使用linux系统中使用的那些命令。
 
 ## 首先了解命令安装的位置
 
@@ -54,13 +54,7 @@ ssh-keygen --t rsa
 
 ![](/Ubuntu14.04/assets/10-4.png)
 
-2.将id\_rsa.pub公钥文件传至远程服务器家目录的 .ssh 目录下，如何传送文件参考 [Ubuntu14.04/file.md](/Ubuntu14.04/file.md)，并修改其名为 authorized\_keys
+2.将id\_rsa.pub公钥文件传至远程服务器家目录的 .ssh 目录下，如何传送文件参考 [Ubuntu14.04/file.md](/Ubuntu14.04/file.md)，并修改其名为 authorized\_keys 。
 
-
-
-
-
-
-
-
+scp /c/Users/username/.ssh/idrsa.pub remote\_username@remote\_ip:/home/remote\_username/.ssh/authorized\_keys 
 
