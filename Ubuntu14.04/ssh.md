@@ -56,5 +56,7 @@ ssh-keygen --t rsa
 
 2.将id\_rsa.pub公钥文件传至远程服务器家目录的 .ssh 目录下，如何传送文件参考 [Ubuntu14.04/file.md](/Ubuntu14.04/file.md)，并修改其名为 authorized\_keys 。
 
-scp /c/Users/username/.ssh/idrsa.pub remote\_username@remote\_ip:/home/remote\_username/.ssh/authorized\_keys 
+scp /c/Users/username/.ssh/idrsa.pub remote\_username@remote\_ip:/home/remote\_username/.ssh/authorized\_keys
+
+以后的所有涉及需要远程linux用户密码的都可以不用手动输入了。
 
