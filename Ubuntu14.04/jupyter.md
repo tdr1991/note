@@ -36,7 +36,7 @@ jupyter notebook password
 
 ![](/Ubuntu14.04/assets/9-5.png)
 
-注意 hash 码的存放位置
+注意 hash 码的存放位置，貌似无需再配置 “c.NotebookApp.password” 这项。所以推荐使用该方法设置密码。
 
 使用SSL加密通信
 
@@ -133,4 +133,34 @@ ssh -N -f -L localhost:8888:localhost:8888 remote\_user@remote\_host
 或者启动 jupyter 界面显示的  token
 
 ![](/Ubuntu14.04/assets/9-3.png)
+
+4.命令写入脚本
+
+因为本地系统是windows 10，所以使用 git 操作命令
+
+vim jupyter.sh
+
+内容如下
+
+\#!/bin/bash
+
+ssh -N -f -L localhost:8888:localhost:8888 username@ip
+
+命令行输入
+
+./jupyter.sh
+
+如果没有执行权限，则会提示无 bash 命令。此时有两种方法解决
+
+a.bash jupyter.sh
+
+b.给脚本添加执行权限
+
+chmod u+x jupyter.sh
+
+
+
+
+
+
 
