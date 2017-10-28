@@ -158,9 +158,9 @@ b.给脚本添加执行权限
 
 chmod u+x jupyter.sh
 
+除了用bash执行脚本，也可用sh执行，设置与bash一样。
 
+脚本执行时可能需要手动输入密码，如需无密码登录，可以参考
 
-
-
-
+[Ubuntu14.04/ssh.md](/Ubuntu14.04/ssh.md)
 
