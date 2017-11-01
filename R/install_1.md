@@ -16,7 +16,7 @@ sudo apt-get autoremove r-base-core
 
 首先创建一个conda环境，或者在已有环境安装。在该环境安装 R 所需的包。
 
-conda install -c r r-essentials
+conda install r-base
 
 提示一堆安装的包
 
