@@ -1,6 +1,6 @@
 # 安装R
 
-系统安装好 R
+## 系统安装 R
 
 sudo apt-get install r-base r-base-core -y
 
@@ -12,7 +12,7 @@ sudo apt-get autoremove r-base-core
 
 ![](/R/assets/1-1.png)
 
-使用 conda 安装R，方便在jupyter中编写R
+## 使用 conda 安装R，方便在jupyter中编写R
 
 首先创建一个conda环境，或者在已有环境安装。在该环境安装 R 所需的包。
 
