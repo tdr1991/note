@@ -122,7 +122,9 @@ jupyter notebook --no-brower --port=8888
 
 命令写入脚本 jupyter.sh
 
+vim jupyter.sh
 
+![](/Ubuntu14.04/assets/9-6.png)
 
 浏览器登陆后的显示目录是当前的目录如果没有在配置文件中修改工作目录
 
