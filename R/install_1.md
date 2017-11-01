@@ -4,7 +4,7 @@
 
 sudo apt-get install r-base r-base-core -y
 
-下载 R 语言包
+卸载 R 语言包
 
 sudo apt-get autoremove r-base-core
 
