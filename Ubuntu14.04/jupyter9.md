@@ -120,6 +120,10 @@ jupyter nbextension enable jupyter\_contrib\_nbextensions
 
 jupyter notebook --no-brower --port=8888
 
+命令写入脚本 jupyter.sh
+
+
+
 浏览器登陆后的显示目录是当前的目录如果没有在配置文件中修改工作目录
 
 2.本地终端启动ssh
