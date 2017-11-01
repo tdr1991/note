@@ -116,9 +116,11 @@ jupyter nbextension enable jupyter\_contrib\_nbextensions
 
 1.在远程服务器，启动jupyter服务
 
+如果是用 conda 安装的 jupyter ，比如安装在 py 3 的环境下，需要先激活环境（source activate py3），最好放到后台运行，否则终端需要一直开着，也可将这些命令写入一个脚本。
+
 jupyter notebook --no-brower --port=8888
 
-浏览器登陆后的显示目录是当前的目录
+浏览器登陆后的显示目录是当前的目录如果没有在配置文件中修改工作目录
 
 2.本地终端启动ssh
 
