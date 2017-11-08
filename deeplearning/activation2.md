@@ -54,11 +54,7 @@
 
 ### 定义
 
-### $$ReLU(x) = 
-\begin{cases}
-1, & {x \ge 0} \\
-x, & {x < 0}
-\end{cases}$$
+$$x = y$$
 
 ### 图像
 
