@@ -84,7 +84,8 @@ x, & {x < 0}
 
 ### 定义
 
-### $$x = y$$
+$$f(x) = \begin{cases}
+x, & {x > 0} \\ \alphax, & {x \le 0} \end{cases}$$
 
 
 
