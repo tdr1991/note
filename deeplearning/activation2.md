@@ -54,7 +54,7 @@
 
 ### 定义
 
-$$ReLU(x) = 
+### $$ReLU(x) = 
 \begin{cases}
 1, & {x \ge 0} \\
 x, & {x < 0}
