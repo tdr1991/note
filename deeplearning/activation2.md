@@ -56,8 +56,8 @@
 
 $$ReLU(x) = 
 \begin{cases}
-1, & {z \ge 0} \\
--1, & {z < 0}
+1, & {x \ge 0} \\
+x, & {x < 0}
 \end{cases}$$
 
 ### 图像
