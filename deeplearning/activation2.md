@@ -46,11 +46,9 @@
 
 ### 定义
 
-### $$softmax(x_i) = \frac{e^x_i}{}$$
+### $$softmax(x_i) = \frac{e^{x_i}}{\sum_{j=1}^ne^{x_j}}$$
 
 ### 图像
-
-
 
 ## ReLU函数
 
