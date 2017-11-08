@@ -40,16 +40,26 @@
 
 ## ReLU函数
 
-### 定义                       $$ReLU\(x\) = \begin{cases}
-
-0, & {x \ge 0}  \  
-x, & {x &lt; 0} \end{cases}$$
+### 定义                       $$ReLU(x) = \begin{cases}0, & {x \ge 0}  \\
+x, & {x < 0} \end{cases}$$
 
 ### 图像
 
 ![](/deeplearning/assets/2-3.png)
 
-优点：
+### 优点：
 
-1.相比起Sigmoid和tanh，ReLU\(e.g. a factor of 6 in Krizhevsky et al.\)在SGD中能够快速收敛。例如在下图的实验中，在一个四层的卷积神经网络中，实线代表了ReLU，虚线代表了tanh，ReLU比起tanh更快地到达了错误率0.25处。据称，这是因为它线性、非饱和的形式。
+1.相比起Sigmoid和tanh，ReLU在SGD中能够快速收敛。
+
+2.Sigmoid和tanh涉及了很多很expensive的操作（比如指数），ReLU可以更加简单的实现。
+
+3.有效缓解了梯度消失的问题。
+
+4.在没有无监督预训练的时候也能有较好的表现。
+
+5.提供了神经网络的稀疏表达能力。
+
+### 缺点：
+
+随着训练的进行，可能会出现神经元死亡，权重无法更新的情况。如果发生这种情况，那么流经神经元的梯度从这一点开始将永远是0。也就是说，ReLU神经元在训练中不可逆地死亡了。
 
