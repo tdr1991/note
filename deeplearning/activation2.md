@@ -40,10 +40,17 @@
 
 ## ReLU函数
 
-### 定义                       ReLU\(x\) =
+### 定义                       $$ReLU(x) = \begin{cases} 
+0, & {x \ge 0}  \\
+x, & {x < 0} \end{cases}$$
 
-\begin{cases}  
-0, & {x \ge 0} \  
-x, & {x &lt; 0}  
-\end{cases}
+### 图像
+
+![](/deeplearning/assets/2-3.png)
+
+优点：
+
+1.相比起Sigmoid和tanh，ReLU\(e.g. a factor of 6 in Krizhevsky et al.\)在SGD中能够快速收敛。例如在下图的实验中，在一个四层的卷积神经网络中，实线代表了ReLU，虚线代表了tanh，ReLU比起tanh更快地到达了错误率0.25处。据称，这是因为它线性、非饱和的形式。
+
+
 
