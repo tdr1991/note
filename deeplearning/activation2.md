@@ -46,7 +46,9 @@
 
 ### 定义
 
-### $$x = y$$
+### $$R
+eLU(x) =
+\begin{cases} 0, & {x \ge 0} \ x, & {x < 0} \end{cases}$$
 
 ### 图像
 
