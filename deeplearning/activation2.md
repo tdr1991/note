@@ -40,9 +40,7 @@
 
 ## ReLU函数
 
-### 定义                       $$ReLU\(x\) = \begin{cases}0, & {x \ge 0}  \
-
-x, & {x &lt; 0} \end{cases}$$
+### 定义                      
 
 $$g(z) = 
 \begin{cases}
