@@ -82,10 +82,24 @@ x, & {x < 0}
 
 ## LReLU、PReLU与RReLU函数 {#lreluprelu与rrelu}
 
-### 定义
+### LReLU、PReLU定义
 
 $$f(x) = \begin{cases}
 x, & {x > 0} \\ \alphax, & {x \le 0} \end{cases}$$
+
+### 图像
+
+![](/deeplearning/assets/2-4.png)
+
+### LReLU
+
+当ai比较小而且固定的时候，我们称之为LReLU。LReLU最初的目的是为了避免梯度消失。但在一些实验中，我们发现LReLU对准确率并没有太大的影响。很多时候，当我们想要应用LReLU时，我们必须要非常小心谨慎地重复训练，选取出合适的a，LReLU的表现出的结果才比ReLU好。因此有人提出了一种自适应地从数据中学习参数的PReLU。
+
+### PReLU
+
+PReLU是LReLU的改进，可以自适应地从数据中学习参数。PReLU具有收敛速度快、错误率低的特点。PReLU可以用于反向传播的训练，可以与其他层同时优化。
+
+
 
 
 
