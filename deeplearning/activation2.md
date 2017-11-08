@@ -2,9 +2,9 @@
 
 ## sigmoid函数
 
-### 定义                         
+### 定义
 
-###                                                            $$sigmoid(x) = \frac{1}{1 + e^{-x}}$$
+### $$sigmoid(x) = \frac{1}{1 + e^{-x}}$$
 
 ### 图像
 
@@ -24,9 +24,9 @@
 
 ## tanh函数
 
-### 定义        
+### 定义
 
-###                                                                               $$tanh(x) = \frac{1 - e^{-2x}}{1 + e^{-2x}}$$
+### $$tanh(x) = \frac{1 - e^{-2x}}{1 + e^{-2x}}$$
 
 ### 图像
 
@@ -44,13 +44,10 @@
 
 ## ReLU函数
 
-### 定义  
+### 定义
 
-###                                                                       $$ReLU(x) = 
-\begin{cases}
-0, & {x \ge 0} \\
-x, & {x < 0}
-\end{cases}$$
+### $$g(x) =
+\begin{cases} 0, & {x \ge 0} \\ x, & {x < 0} \end{cases}$$
 
 ### 图像
 
