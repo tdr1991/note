@@ -47,8 +47,8 @@
 ### 定义
 
 ### $$R
-eLU(x) =
-\begin{cases} 0, & {x \ge 0} \ x, & {x < 0} \end{cases}$$
+
+### $$x = y$$
 
 ### 图像
 
