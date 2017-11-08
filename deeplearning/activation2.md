@@ -84,10 +84,7 @@ x, & {x < 0}
 
 ### 定义
 
-### $$f(x) = \begin{cases}
-x, & {x > 0} \\
-\alphax, & {x \le 0}
-\end{cases}$$
+### $$x = y$$
 
 
 
