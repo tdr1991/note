@@ -1,20 +1,4 @@
-# g\(z\) =
-
-# \begin{cases}
-
-# 1, & {z \ge 0} \
-
-# -1, & {z &lt; 0}
-
-# \end{cases}g\(z\) =
-
-# \begin{cases}
-
-# 1, & {z \ge 0} \
-
-# -1, & {z &lt; 0}
-
-# \end{cases}激活函数
+# 激活函数
 
 ## sigmoid函数
 
