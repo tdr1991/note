@@ -85,8 +85,8 @@ x, & {x < 0}
 ### 定义
 
 ### $$f(x) = \begin{cases}
-x, & {z > 0} \\
--1, & {x \le 0}
+x, & {x > 0} \\
+\alphax, & {x \le 0}
 \end{cases}$$
 
 
