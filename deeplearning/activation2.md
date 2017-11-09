@@ -85,7 +85,7 @@ x, & {x < 0}
 ### LReLU、PReLU定义
 
 $$f(x) = \begin{cases}
-x, & {x > 0} \\ \alphax, & {x \le 0} \end{cases}$$
+x, & {x > 0} \\ \alpha(x), & {x \le 0} \end{cases}$$
 
 ### 图像
 
