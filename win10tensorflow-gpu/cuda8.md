@@ -38,7 +38,5 @@
 
 在新建的那一栏填入路径 “C:\Program Files\NVIDIA Corporation\NVSMI”，安装路径不同的话路径是不一样的，找到nvidia-smi所在的目录就对了。
 
-
-
-
+6.出现的问题![](/assets/cuda/10.png)![](/assets/cuda/9.png)出现cudnn版本不匹配，我这里下载的是v7版本的cudnn，按照上面的提示匹配的版本应该是v6版本，下载v6版本即可解决问题。
 
