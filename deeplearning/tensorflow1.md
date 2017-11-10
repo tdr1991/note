@@ -47,3 +47,13 @@ tf.reset\_default\_graph\(\)
 
 ![](/deeplearning/assets/1-3.png)
 
+## 不同系统GPU显存占用
+
+1.在windows系统下，通过命令行 nvidia-smi -l 观察到的GPU显存占用是实际程序运行所占用的显存。
+
+![](/deeplearning/assets/1-4.png)
+
+2.在linux系统下，通过命令行 nvidia-smi -l 观察到的GPU显存占用基本整条卡都占用。
+
+![](/deeplearning/assets/1-5.png)
+
