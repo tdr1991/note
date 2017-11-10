@@ -57,3 +57,11 @@ tf.reset\_default\_graph\(\)
 
 ![](/deeplearning/assets/1-5.png)
 
+## 不同系统下在模型中打印消息的时间
+
+1.在windows下按照代码先后打印消息
+
+2.在linux下，一次性打印全部消息
+
+
+
