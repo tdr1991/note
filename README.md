@@ -18,5 +18,5 @@ docker rm ${docker ps -a}  \#删除所有容器
 
 docker images id  \#镜像id
 
-
+注意：先删容器再删镜像
 
