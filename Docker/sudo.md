@@ -1,6 +1,6 @@
 # 创建Docker用户组
 
-由于Docker是在root或有sudo权限下安装的，所以每一使用都要切换到root或加sudo。为了避免这种情况，可以创建一个Docker用户组
+由于Docker是在root或有sudo权限下安装的，所以每一使用都要切换到root或加sudo。为了避免这种情况，可以创建一个Docker用户组。
 
 1 使用有sudo权限的帐号登录系统。
 
