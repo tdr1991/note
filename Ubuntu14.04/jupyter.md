@@ -112,7 +112,9 @@ jupyter contrib nbextension install --user
 
 设置扩展可见，两种方式
 
-1.jupyter nbextension enable codefolding/main
+1.使用命令行形式
+
+jupyter nbextension enable codefolding/main
 
 2.直接在浏览器的 扩展选项卡勾选
 
