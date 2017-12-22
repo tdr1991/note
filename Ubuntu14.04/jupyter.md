@@ -112,6 +112,8 @@ jupyter contrib nbextension install --user
 
 设置扩展可见，两种方式
 
+比如设置目录插件 table of contens\(2\)  插件名为 toc2
+
 1.使用命令行形式
 
 jupyter nbextension enable codefolding/main
