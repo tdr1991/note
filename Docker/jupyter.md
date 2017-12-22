@@ -10,5 +10,7 @@
 
 解决办法参考的是  [http://blog.csdn.net/u014265088/article/details/53116974](http://blog.csdn.net/u014265088/article/details/53116974 "ssl error")
 
+启动时记得做好端口映射
 
+nvidia-docker run -p 8888:8888 -it -v /data:/data tdr jupyter notebook --allow-root
 
