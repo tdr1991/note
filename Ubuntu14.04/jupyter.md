@@ -106,9 +106,15 @@ sudo ln -s /usr/local/lib/libiconv.so.2 /usr/lib/libiconv.so.2
 
 详情参考 [http://blog.chinaunix.net/uid-25266990-id-2747211.html](http://blog.chinaunix.net/uid-25266990-id-2747211.html)
 
-设置扩展可见
+安装扩展文件和编辑配置文件
 
-jupyter nbextension enable jupyter\_contrib\_nbextensions
+jupyter contrib nbextension install --user
+
+设置扩展可见，两种方式
+
+1.jupyter nbextension enable codefolding/main
+
+2.直接在浏览器的 扩展选项卡勾选
 
 ![](/Ubuntu14.04/assets/9-4.png)
 
