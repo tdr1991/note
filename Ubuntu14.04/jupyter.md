@@ -116,7 +116,7 @@ jupyter contrib nbextension install --user
 
 1.使用命令行形式
 
-jupyter nbextension enable codefolding/main
+jupyter nbextension enable toc2/main
 
 2.直接在浏览器的 扩展选项卡勾选
 
