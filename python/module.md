@@ -20,13 +20,15 @@ import test
 
 1）代码添加。假设包名为 pk ，windows系统，在 C:// 目录下
 
-pkPath = “C://pk” 
+pkPath = “C://pk”
 
 sys.path.append\(pkPath\)
 
 print\(sys.path\)
 
 import test
+
+此方法只是对当前文件有效
 
 2\) 设置 PYTHONPATH 环境变量
 
@@ -36,11 +38,5 @@ print\(sys.path\)
 
 import pk.test
 
-
-
-
-
-
-
-
+推荐使用
 
