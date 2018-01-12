@@ -20,7 +20,7 @@ import test
 
 1）代码添加。假设包名为 pk ，windows系统，在 C:\python 目录下
 
-pkPath = “C:\python\pk”
+pkPath = “C:\\python\\pk”
 
 sys.path.append\(pkPath\)
 
