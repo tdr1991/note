@@ -18,9 +18,9 @@ import test
 
 2 不同目录。设置包管理，但是在包目录下必须要有以此 “\_\_init\_\_.py” 命名的文件，可为空。将包目录添加至 sys.path 搜索路径。两种方式
 
-1）代码添加。假设包名为 pk ，windows系统，在 C:// 目录下
+1）代码添加。假设包名为 pk ，windows系统，在 C://python 目录下
 
-pkPath = “C://pk”
+pkPath = “C://python//pk”
 
 sys.path.append\(pkPath\)
 
@@ -32,7 +32,7 @@ import test
 
 2\) 设置 PYTHONPATH 环境变量
 
-PYTHONPATH  = “C://”
+PYTHONPATH  = “C://python”
 
 print\(sys.path\)
 
