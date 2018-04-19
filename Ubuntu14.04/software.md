@@ -18,5 +18,7 @@ sed -i 's/BIG-REQUESTS/\_IG-REQUESTS/' ~/lib/libxcb.so.1
 
 LD\_LIBRARY\_PATH=$HOME/lib code
 
+\#如果觉得命令太长可以设置一个别名
 
+alias vscode='LD\_LIBRARY\_PATH=$HOME/lib code'
 
