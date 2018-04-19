@@ -22,3 +22,5 @@ LD\_LIBRARY\_PATH=$HOME/lib code
 
 alias vscode='LD\_LIBRARY\_PATH=$HOME/lib code'
 
+\#之后每次在命令行输入vscode就能打开VScode
+
